@@ -1,0 +1,14 @@
+    public String solution(String s1, String s2) {
+        String answer = "YES";
+
+        return answer;
+    }
+
+    public static void main(String[] args){
+        P02_Anagram p = new P02_Anagram();
+        Scanner kb = new Scanner(System.in);
+        String a = kb.nextLine();
+        String b = kb.nextLine();
+        System.out.println(p.solution(a, b));
+    }
+    import java.util.*;
