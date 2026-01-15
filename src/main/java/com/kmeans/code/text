@@ -1,14 +1,21 @@
-    public String solution(String s1, String s2) {
-        String answer = "YES";
+public class P02_DFS_2 {
+    static int answer = Integer.MIN_VALUE, c, n;
+    public void DFS(int L, int sum, int[] arr){
 
-        return answer;
     }
 
     public static void main(String[] args){
-        P02_Anagram p = new P02_Anagram();
-        Scanner kb = new Scanner(System.in);
-        String a = kb.nextLine();
-        String b = kb.nextLine();
-        System.out.println(p.solution(a, b));
+        P02_DFS_2 T = new P02_DFS_2();
+        Scanner sc = new Scanner(System.in);
+        c = sc.nextInt();
+        n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+        T.DFS(0, 0, arr);
+        System.out.println(answer);
     }
-    import java.util.*;
+}
+
+import java.util.*;
